@@ -16,7 +16,9 @@ if(userEmail){
 
 // to check function --
 
-// if (userEmail.length === 0){
+const email = []
+
+// if (email.length === 0){
 //      console.log("array is empty");
 // }
 
@@ -25,6 +27,7 @@ if(userEmail){
 // to check Object --
 
 // const emptyObj = {}
+
 // if (Object.keys(emptyObj).length === 0){
 //     console.log("Object is empty");
 // }
@@ -51,4 +54,3 @@ console.log(val1);
 
 const teaPrice = 100
 teaPrice <= 50 ? console.log("less than 80") : console.log("more than 80");
-
