@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style ="background-color: #212121;color: #fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlang(langName){
+        const li=document.createElement('li')
+        li.innerHTML =`${langName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addlang('python')
+    addlang('typescript')
+
+    function addOptilang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilang('C++')
+
+    //Edit
+    const secondlang=document.querySelector("li:nth-child(2)")
+    secondlang.innerHTML="ruby" //not optimised though
+
+    const newli=document.createElement('li')
+    newli.textContent = "scala"
+    secondlang.replaceWith(newli)
+
+    //Edit
+
+    const firstlang =document.querySelector("li:first-child")
+    firstlang.outerHTML='<li>Typescript</li>'
+
+    //remove
+    const lastlang =document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+</html>
