@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color : #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM learning on Youtube <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit hic sequi.</p>
+
+        <ul>
+            <li class ="list-item">one</li>
+            <li class ="list-item">two</li>
+            <li class ="list-item">three</li>
+            <li class ="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- const myul = document.querySelector('ul')
+const tg = myul.querySelector('li')
+tg.style.backgroundColor ="green"
+tg.style.padding ="10px"
+tg.innerText
+tg.innerText='five' -->
+
+
+<!-- const templi = document.querySelectorAll('li')
+<!-- temple.style.color='red'  not work since it's a nodelist not an array -->
+<!-- templi[0].style.color ='blue'
+const myh1 = document.querySelectorAll('h1')
+myh1[0].style.color ='red'
+
+templi.forEach( function (i) { 
+    i.style.backgroundColor ="red"
+})
+
+
+const tempclass = document.getElementsByClassName('list-item')
+
+to convert this nodelist to array---
+const newarr=Array.from(tempclass)
+
+newarr.forEach(function(i) {
+    console.log(i)
+})
+
+newarr.forEach(function(i) {
+    i.style.color='orange'
+}) --> -->
+
+
+
+
+<!-- const allH2 = document.querySelectorAll('h2')
+allH2[0].innerText
+allH2.innerHTML
+allH2[1].innerText
+allH2[2].innerText
+
+const myh2 = document.querySelectorAll('.mw-headline')
+myh2[0].innerText
+
+myh2.forEach( function (h) {
+    h.style.color ="red"})
+
+myh2.forEach( function (h) {
+    h.style.color ="green";
+    h.style.backgroundColor='yellow';
+    h.style.padding ='10px';
+    h.innerText="Rohit"
+}) -->
