@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello again</h1>
+    <div id="buttonshehe">
+        <button id="start">Start</button>
+        <button id ="stop">Stop</button>
+    </div>
+</body>
+<script>
+    // const sayDate = function(){
+    //     console.log("Rohit",Date.now());
+    // }
+    //  setInterval(sayDate,1000)
+
+// setInterval contains third parameter too-------------------------------
+    
+    // const sayDate = function(str){
+    //     console.log(str,Date.now());
+    // }
+    //  const intervalId = setInterval(sayDate,1000,"hello")
+
+
+    const buttons = document.querySelector('#buttonshehe')
+
+    let interval;
+
+    buttons.addEventListener('click',function(e){
+        if(e.target.id == 'start'){
+            if(!interval){
+                interval =setInterval(function(){
+                console.log("It's started ",Date.now())
+            },1000)
+            }
+        }
+        if(e.target.id == 'stop'){
+            clearInterval(interval)
+            console.log("stopped hehe");
+            interval = null;
+        }
+    })
+    
+</script>
+</html>

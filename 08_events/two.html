@@ -7,11 +7,29 @@
 </head>
 <body>
     <h1>hello world</h1>
-    <button id ="stop"></button>
+    <button id ="stop">Stop</button>
 </body>
 <script>
-    setTimeout(function(){
+    // setTimeout(function(){
+    //     console.log("Rohit");
+    // },2000) //print only once : after 2 seconds
+    //setInterval : do that thing continuosly
+    
+    const sayRohit = function(){
         console.log("Rohit");
-    })
+    }
+    setTimeout(sayRohit,2000) 
+
+
+    // document.querySelector('h1').innerHTML = "Javascript is best language"
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Javascript is best language"
+    }
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("stopped");
+    })    
 </script>
 </html>
