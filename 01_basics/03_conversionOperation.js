@@ -47,7 +47,7 @@ console.log(str1+str2)
 console.log("1" +2) //12 
 console.log(1 + "2") //12
 console.log("1" + 2 + 2) //why ? follow link given @ end of file
-console.log(1 + 2 + "2");  //bad practice use parenthesis
+console.log(1 + 2 + "2");  //bad practice, use parenthesis instead
 
 console.log("1" + (2+2))
 console.log(true)
